@@ -1,5 +1,5 @@
 # 效果图
-<img src="https://raw.githubusercontent.com/destiny-wenlun/concise-clock/master/img/demo1.gif" width="195"  /><img src="https://raw.githubusercontent.com/destiny-wenlun/concise-clock/master/img/demo2.gif" width="195"  /><img src="https://raw.githubusercontent.com/destiny-wenlun/concise-clock/master/img/demo3.gif" width="195"  /><img src="https://raw.githubusercontent.com/destiny-wenlun/concise-clock/master/img/demo4.gif" width="195"  /><img src="https://raw.githubusercontent.com/destiny-wenlun/concise-clock/master/img/demo5.gif" width="195"  />
+<img src="https://raw.githubusercontent.com/destiny-wenlun/concise-clock/master/img/demo1.gif" width="177"  /><img src="https://raw.githubusercontent.com/destiny-wenlun/concise-clock/master/img/demo2.gif" width="177"  /><img src="https://raw.githubusercontent.com/destiny-wenlun/concise-clock/master/img/demo3.gif" width="177"  /><img src="https://raw.githubusercontent.com/destiny-wenlun/concise-clock/master/img/demo4.gif" width="177"  /><img src="https://raw.githubusercontent.com/destiny-wenlun/concise-clock/master/img/demo5.gif" width="177"  />
 
 >说明：这是基于vue开发的一个模拟时钟组件。
 

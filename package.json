@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "基于Vue的模拟时钟组件",
   "author": "wenlun",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "demo": "webpack-dev-server --inline --progress --config build/webpack.demo.dev.conf.js",
     "start": "npm run demo",
@@ -11,10 +15,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "vue": "^2.5.2",
     "concise-clock": "^1.0.2"
   },
   "devDependencies": {
-    "vue": "^2.5.2",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
@@ -51,6 +55,24 @@
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
   },
+  "keywords": [
+    "vue",
+    "vue.js",
+    "canvas",
+    "clockwise",
+    "clock",
+    "Analog Clock",
+    "time",
+    "模拟时钟"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/destiny-wenlun/vue-analog-clock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/destiny-wenlun/vue-analog-clock/issues"
+  },
+  "homepage": "https://github.com/destiny-wenlun/vue-analog-clock#readme",
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"

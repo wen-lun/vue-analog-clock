@@ -31,19 +31,11 @@ export default Vue.extend({
 		};
 	},
 	mounted() {
-		let options = {};
-		let isRun = true;
-		Object.keys(this.$props).forEach(key => {
-			let val = this.$props[key];
-			if ("time" == key && val) {
-				isRun = false;
-				options.onload = clock => {
-					clock.show(val);
-				};
-			} else if (val !== undefined) {
-				options[key] = val;
-			}
-		});
+		let isRun = !this.time; //如果time没有值，那么就可以先运行
+		let options = {
+			...this.$props,
+			...(isRun ? {} : { onload: clock => clock.show(this.time) })
+		};
 		this.clock = new Clock(this.$refs.clock, options);
 		if (isRun) this.clock.run();
 	},
@@ -51,11 +43,68 @@ export default Vue.extend({
 		this.stop();
 	},
 	methods: {
+		updateOptions(props) {
+			//更新options
+			this.clock && this.clock.setOptions(this.$props);
+		},
 		run() {
 			this.clock && this.clock.run();
 		},
 		stop() {
 			this.clock && this.clock.stop();
+		}
+	},
+	watch: {
+		size() {
+			this.updateOptions();
+		},
+		time() {
+			this.clock && this.clock.show(this.time);
+		},
+		padding() {
+			this.updateOptions();
+		},
+		borderWidth() {
+			this.updateOptions();
+		},
+		borderColor() {
+			this.updateOptions();
+		},
+		borderImage() {
+			this.updateOptions();
+		},
+		backgroundColor() {
+			this.updateOptions();
+		},
+		backgroundImage() {
+			this.updateOptions();
+		},
+		backgroundMode() {
+			this.updateOptions();
+		},
+		backgroundAlpha() {
+			this.updateOptions();
+		},
+		scaleType() {
+			this.updateOptions();
+		},
+		scaleColor() {
+			this.updateOptions();
+		},
+		hourColor() {
+			this.updateOptions();
+		},
+		secondHandColor() {
+			this.updateOptions();
+		},
+		minuteHandColor() {
+			this.updateOptions();
+		},
+		hourHandColor() {
+			this.updateOptions();
+		},
+		showShadow() {
+			this.updateOptions();
 		}
 	}
 });

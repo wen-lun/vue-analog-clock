@@ -14,7 +14,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     app: './src/index.js'
   },
   output: {
-    path: path.resolve(__dirname, '../publish'),
+    path: path.resolve(__dirname, '../dist'),
     filename: 'index.js',
     libraryTarget: 'umd' // commonjs2
   },

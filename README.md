@@ -75,10 +75,10 @@ export default{
 # 3. props
 |属性|说明|类型|默认值|
 |:-|:-|:-|:-|
-|size|模拟时钟大小|Number|500|
+|size|模拟时钟大小|Number|300|
 |time|指定显示某个时间，若有指定，那么时钟会停在指定的时间,类型可以是Date对象或字符串，如果是字符串，那么必须满足格式:"hh:mm:ss"|String \| Date|-|
 |padding|内边距|Number|5|
-|borderWidth|边框宽度|Number|20|
+|borderWidth|边框宽度|Number|15|
 |borderColor|边框颜色|String|black|
 |borderImage|边框背景图片，优先级高于borderColor|String|-|
 |backgroundColor|背景色|String|white|

@@ -1,6 +1,6 @@
 {
   "name": "vue-analog-clock",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "基于Vue的模拟时钟组件",
   "author": "wenlun",
   "main": "dist/index.js",
@@ -16,7 +16,7 @@
     "release": "npm run build & npm publish"
   },
   "dependencies": {
-    "concise-clock": "^1.0.3",
+    "concise-clock": "^1.0.4",
     "vue": "^2.5.2"
   },
   "devDependencies": {

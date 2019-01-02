@@ -10,6 +10,7 @@
 				:scaleType="scaleType"
 				:borderImage="borderImage"
 				:backgroundImage="backgroundImage"
+				:handType="handType"
 				:hourHandColor="hourHandColor"
 				:minuteHandColor="minuteHandColor"
 				:secondHandColor="secondHandColor"
@@ -88,6 +89,13 @@
 						</select>
 					</div>
 					<div class="item">
+						<span>指针类型：</span>
+						<select v-model="handType" class="form-control input-sm">
+							<option value="triangle">三角形</option>
+							<option value="line">线条</option>
+						</select>
+					</div>
+					<div class="item">
 						<span>时针颜色：</span>
 						<select v-model="hourHandColor" class="form-control input-sm">
 							<option value="black">黑色</option>
@@ -133,6 +141,7 @@ export default {
 			scaleType: "arabic",
 			borderImage: null,
 			backgroundImage: null,
+			handType: "triangle",
 			hourHandColor: "black",
 			minuteHandColor: "black",
 			secondHandColor: "red"

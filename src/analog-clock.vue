@@ -20,6 +20,7 @@ export default Vue.extend({
 		scaleType: { type: String }, //显示的刻度类型,默认值arabic, roman：罗马数字，arabic：阿拉伯数字，none：不显示
 		scaleColor: { type: String }, //刻度线颜色
 		hourColor: { type: String }, //显示的小时文字颜色
+		handType: { type: String }, //指针类型
 		secondHandColor: { type: String }, //秒针颜色
 		minuteHandColor: { type: String }, //分针颜色
 		hourHandColor: { type: String }, //时针颜色
@@ -92,6 +93,9 @@ export default Vue.extend({
 			this.updateOptions();
 		},
 		hourColor() {
+			this.updateOptions();
+		},
+		handType() {
 			this.updateOptions();
 		},
 		secondHandColor() {
